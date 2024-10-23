@@ -19,6 +19,14 @@
 - **HelloServlet.java** : A servlet that handles HTTP requests.<br>
 - **AppTest.java** : Unit tests for the application.<br>
 
+## 4. Spring MVC (SpringMVCDemo)
+**Description** : This project is a simple demonstration of a Spring MVC web application. It showcases the use of Spring's model-view-controller architecture for handling user requests, processing business logic, and returning views.
+#### Key Files:
+- **Alien.java** : Business logic class.
+- **HomeController.java** : Spring MVC controller handling HTTP requests.
+- **index.jsp** : View for the homepage.
+- **result.jsp** : View for displaying results.
+
 ## 5. Spring Data JPA Project (SpringDataJpa)
 **Description** : Demonstrates the use of Spring Data JPA to interact with a relational database using the JPA (Java Persistence API).
 #### Key Files:
