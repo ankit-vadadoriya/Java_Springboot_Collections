@@ -1,0 +1,41 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--        while we use singleton, object created one times-->
+<!--    <bean id="alien1" class="org.ankit.Alien" scope="singleton">-->
+<!--    </bean>-->
+<!--    //-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;OR&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+<!--    <bean id="alien1" class="org.ankit.Alien" scope="prototype">-->
+<!--    </bean>-->
+
+    <bean id="alien1" class="org.ankit.Alien" scope="singleton" autowire="byType">
+        <!--        for assign value we use value-->
+        <property name="age" value="20" />
+<!--        for assign object we use ref-->
+<!--        <property name="com" ref="com1" />-->
+
+        <property name="com" >
+            <bean id="com1" class="org.ankit.Laptop" primary="true">
+            </bean>
+        </property>
+
+<!--        <constructor-arg type="org.ankit.Laptop" ref="lap1" />-->
+<!--        <constructor-arg type="int" value="50" />-->
+
+<!--        <constructor-arg index="1" ref="lap1" />-->
+<!--        <constructor-arg index="0" value="50" />-->
+
+<!--        <constructor-arg name="lap" ref="lap1" />-->
+<!--        <constructor-arg name="age" value="50" />-->
+    </bean>
+
+<!--    <bean id="com1" class="org.ankit.Laptop" primary="true">-->
+<!--    </bean>-->
+
+<!--    <bean class="org.ankit.Desktop" lazy-init="true">-->
+<!--    </bean>-->
+
+</beans>
