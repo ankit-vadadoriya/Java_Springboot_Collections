@@ -44,9 +44,9 @@
 - **JobRepo.java** : Repository interface for job-related database operations.<br>
 
 ## 7. Spring Security with JWT Authentication
-## Spring_Security
+### Spring_Security
 **Description** : This project is a simple Spring Boot application that implements authentication and authorization using Spring Security and JWT (JSON Web Tokens). It allows users to register, log in, and access protected resources with JWT-based stateless authentication.
-## SpringOAuth
+### SpringOAuth
 **Description** : This is a Spring Boot application that demonstrates OAuth2-based authentication using Spring Security. It includes basic endpoint handling, security configuration, and integration with OAuth providers. The project is built using Maven and is configurable through the `application.properties` file.
 
 ## 8. DemoWithDocker
