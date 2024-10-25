@@ -48,3 +48,12 @@
 **Description** : This project is a simple Spring Boot application that implements authentication and authorization using Spring Security and JWT (JSON Web Tokens). It allows users to register, log in, and access protected resources with JWT-based stateless authentication.
 ## SpringOAuth
 **Description** : This is a Spring Boot application that demonstrates OAuth2-based authentication using Spring Security. It includes basic endpoint handling, security configuration, and integration with OAuth providers. The project is built using Maven and is configurable through the `application.properties` file.
+
+## 8. DemoWithDocker
+### RestDemoDocker:
+A REST-based Spring Boot application with a Dockerfile for containerization.
+Contains standard Spring Boot structure, including source files, a pom.xml, and a target directory with a compiled JAR file.
+
+### student-app:
+Another Spring Boot project, also set up for Docker with both a Dockerfile and a docker-compose.yml.
+Includes components like Student.java, StudentController.java, StudentRepo.java, and an application.properties file, as well as data.sql for initializing data.
